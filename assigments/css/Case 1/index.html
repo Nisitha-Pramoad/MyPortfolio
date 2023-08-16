@@ -5,203 +5,225 @@
     <title>case 1</title>
     <link rel="stylesheet" href="normalize.css">
     <style>
-        main {
-            height: 100vh;
-            width: 100vw;
-            position: relative;
-        }
+      body>section {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
 
-        main>section {
-            height: 50vh;
-            width: 50vw;
-            position: absolute;
-        }
+      }
 
-        /* loku kotu 4 mada thina circle eka */
-        main>section>div {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            background: white;
-            border-radius: 100%;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-        }
+      section>section > div:nth-child(1) {
+          position: absolute;
+          width: 50vw;
+          height: 50vh;
+          background-color: red;
 
-        /* eka kotuwak athule thina, mada rawme kotuwa */
-        main>section>div>div {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            background: red;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
 
-        /* main 4 rectangle */
-        main>section:nth-child(1) {
-            background: red;
-            left: 0;
-            top: 0;
-        }
+      }
 
-        main>section:nth-child(2) {
-            background: green;
-            right: 0;
-            top: 0;
-        }
+      section>section > div:nth-child(2) {
+          position: absolute;
+          right: 0;
+          width: 50vw;
+          height: 50vh;
+          background-color: green;
+      }
 
-        main>section:nth-child(3) {
-            background: orange;
-            bottom: 0;
-            left: 0;
-        }
+      section>section > div:nth-child(3) {
+          position: absolute;
+          bottom: 0;
+          width: 50vw;
+          height: 50vh;
+          background-color: orange;
+      }
 
-        main>section:nth-child(4) {
-            background: deeppink;
-            right: 0;
-            bottom: 0;
-        }
-
-        /* middle white box */
-        main>div:first-of-type {
-            position: absolute;
-            width: 230px;
-            height: 230px;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            background: white;
-            border: 1px solid white;
-        }
-
-        main>div:first-of-type>div {
-            width: 60%;
-            height: 60%;
-            background: red;
-            border-radius: 100%;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-        }
-
-        /* kon hathare bola hathara */
-        main>div:nth-child(6),
-        main>div:nth-child(7),
-        main>div:nth-child(8),
-        main>div:nth-child(9) {
-            width: 100px;
-            height: 100px;
-            border: 2px solid white;
-            position: absolute;
-            background: white;
-        }
-
-        main>div:nth-child(6) {
-            left: 0;
-            top: 0;
-            border-bottom-right-radius: 100%;
-        }
-
-        main>div:nth-child(7) {
-            right: 0;
-            top: 0;
-            border-bottom-left-radius: 100%;
-        }
-
-        main>div:nth-child(8) {
-            right: 0;
-            bottom: 0;
-            border-top-left-radius: 100%;
-        }
-
-        main>div:nth-child(9) {
-            left: 0;
-            bottom: 0;
-            border-top-right-radius: 100%;
-        }
-
-        /* kon wala thina mada bola deka */
-        main>div:nth-child(10),
-        main>div:nth-child(11) {
-            border: 2px solid white;
-            width: 192px;
-            height: 94px;
-            position: absolute;
-            background: white;
-
-        }
-
-        main>div:nth-child(10) {
-            right: 0;
-            left: 0;
-            top: 0;
-            margin: auto;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-
-        }
-
-        main>div:nth-child(11) {
-            right: 0;
-            left: 0;
-            bottom: 0;
-            margin: auto;
-            border-top-left-radius: 100px;
-            border-top-right-radius: 100px;
-        }
-    </style>
+      section>section > div:nth-child(4) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: deeppink;
+          width: 50vw;
+          height: 50vh;
+      }
+      section>section>div>div:nth-child(1){
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          border-radius: 100%;
+          background-color: white;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+      }
+      section>section>div>div:nth-child(2){
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: red;
+          z-index: 2;
+          width: 50px;
+          height: 50px;
+      }
+      body>section>div:nth-child(2){
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: white;
+          z-index: 2;
+          width: 100px;
+          height: 100px;
+      }
+      body>section>div:nth-child(3){
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          border-radius: 100%;
+          background-color: red;
+          z-index: 3;
+          width: 50px;
+          height: 50px;
+      }
+      body>section>div:nth-child(4){
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 0% 0% 100% 0% ;
+          background-color: white;
+          z-index: 3;
+          width: 75px;
+          height: 75px;
+      }
+      body>section>div:nth-child(5){
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-radius: 0% 0% 0% 100% ;
+          background-color: white;
+          z-index: 3;
+          width: 75px;
+          height: 75px;
+      }
+      body>section>div:nth-child(6){
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border-radius: 100% 0% 0% 0%  ;
+          background-color: white;
+          z-index: 3;
+          width: 75px;
+          height: 75px;
+      }
+      body>section>div:nth-child(7){
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-radius:  0% 100% 0% 0%  ;
+          background-color: white;
+          z-index: 3;
+          width: 75px;
+          height: 75px;
+      }
+      body>section>div:nth-child(8){
+          position: absolute;
+          left: 0;
+          right: 0;
+          border-bottom-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+          margin: auto;
+          background-color: white;
+          z-index: 3;
+          width: 100px;
+          height: 50px;
+      }
+      body>section>div:nth-child(9){
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-top-left-radius: 50px;
+          border-top-right-radius: 50px;
+          margin: auto;
+          background-color:  white;
+          z-index: 4;
+          width: 100px;
+          height: 50px;
+      }
+  </style>
 
 </head>
 
 <body>
-    <main>
-        <section>
-            <div>
-              <div></div>
-            </div>
-          </section>
-          <section>
-            <div>
-              <div></div>
-            </div>
-          </section>
-          <section>
-            <div>
-              <div></div>
-            </div>
-          </section>
-          <section>
-            <div>
-              <div></div>
-            </div>
-          </section>
-          <div>
+  <section>
+    <section>
+        <div>
             <div></div>
-          </div>
-        
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        
-          <div></div>
-          <div></div>
-
-    </main>
+            <div></div>
+        </div>
 
 
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section>
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 </body>
 
 </html>
