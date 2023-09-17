@@ -1,50 +1,376 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-/* .header-bg-color{
-    background-color: #050F25;
-    height: 100%;
-}*/
-
 * {
-    margin: 0;
     padding: 0;
-    background-color: #050F25;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
+    font-style: normal;
+    list-style: none;
     text-decoration: none;
-    margin-left: 40px;
 }
 
-.navbar a::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: .3s;
-}
-
-.navbar a:hover:before{
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 14%;
+    background: transparent;
+}
+
+body {
+    background-color: #050F25;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #DAED1A;
+    font-family: 'Sacramento', cursive;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid #DAED1A;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding-left: 13.7%;
+    padding-top: 130px;
+
+}
+
+.home-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.home-text h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    margin-bottom: 9px;
+    letter-spacing: 4px;
+}
+
+.home-text h5 {
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.home-text .vector-line {
+    margin-bottom: 30px;
+    width: 78%;
+}
+
+.profile-image img {
+    position: relative;
+    width: 370px;
+    height: auto;
+    margin-left: 1.7%;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+
+.home-text a.contactme-button {
+    color: black;
+    background: #DAED1A;
+    border: 1px solid transparent;
+    padding: 15px 28px;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .55s ease;
+}
+
+.home-text a.contactme-button:hover {
+    background: transparent;
+    border: 1px solid #DAED1A;
+    transform: translateX(2px);
+    color: #DAED1A;
+}
+
+.home-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.home-container .play-button i {
+    font-size: 54px;
+    color: #DAED1A;
+}
+
+.home-container .watch-text {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.home-container .intro-video-text {
+    font-size: 10px;
+    color: #808080;
+}
+
+.gradient-circle-1 {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: #07296B;
+    filter: blur(60px);
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    z-index: 2;
+}
+
+.gradient-circle-2 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #256B8B;
+    opacity: 60%;
+    filter: blur(60px);
+    position: absolute;
+    right: 250px;
+    top: 110px;
+    z-index: 1;
+}
+
+
+/* about me */
+
+
+.about-me {
+    height: 430px;
+    width: 100%;
+    background-color: #0A1429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-me h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    margin-top: 15px;
+}
+
+.about-me h5 {
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    margin-top: 20px;
+    width: 1000px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.download-button {
+    margin-top: 75px;
+}
+
+.download-button a {
+    color: black;
+    background: #DAED1A;
+    border: 1px solid transparent;
+    padding: 10px 23px;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    transition: all .55s ease;
+}
+
+.download-button a:hover {
+    background: transparent;
+    border: 1px solid #DAED1A;
+    transform: translateX(2px);
+    color: #DAED1A;
+}
+
+.download-button img {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+.about-me .about-me-vector {
+    position: absolute;
+}
+
+
+/* skill */
+.skill {
+    height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap the skill divs to a new row if they overflow */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Set a maximum width for each skill div */
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8 {
+    max-width: 200px;
+    /* Maximum width for each skill div */
+    width: 100%;
+    /* Take the full width within the container */
+    height: 50px;
+    border-left: 6px solid #DAED1A;
+    background-color: #091530;
+    border-radius: 4%;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.skill hgroup {
+    text-align: center;
+}
+
+.skill h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.skill h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 65px;
+    margin-top: 10px;
+}
+
+/* Position the .tools-set div below the .skill-set */
+.tools-set {
+    position: absolute;
+    background-color: #0A1429;
+    border-radius: 8px;
+    width: 80%;
+    height: 18%;
+    max-width: 950px;
+    padding: 10px 0;
+    margin: 550px auto 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.tools-set > div {
+    margin: 0 17px;
+}
+
+        /* experience */
+
+
+.experience {
+    height: 400px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A1531;
+    position: relative;
+    z-index: 1; 
+}
+
+.experience hgroup {
+    text-align: center;
+}
+
+.experience h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.experience h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.ex-description {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.experience h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 985px;
+    margin-bottom: 65px;
+    margin-top: 10px;
+    line-height: 1.5;
 }
