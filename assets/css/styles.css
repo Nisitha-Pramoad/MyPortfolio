@@ -323,22 +323,22 @@ body {
 }
 
 
-.tools-set > div {
+.tools-set>div {
     margin: 0 17px;
 }
 
-        /* experience */
+/* experience */
 
 
 .experience {
-    height: 400px; 
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0A1531;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .experience hgroup {
@@ -373,4 +373,295 @@ body {
     margin-bottom: 65px;
     margin-top: 10px;
     line-height: 1.5;
+}
+
+
+/* assigment */
+.assigment {
+    height: 700px;
+    width: 100%;
+    display: flex; /* Use flex to center .assigment-layout */
+    justify-content: center;
+    align-items: center; /* Vertically center .assigment-layout */
+}
+
+.assigment-setbg {
+    /* height: 900px;
+    padding: 10%; */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    text-align: center; /* Center text within child elements */
+    margin-bottom: 110px;
+}
+
+.assigment-layout {
+    /* height: 2000px; */
+    width: 1000px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    background-color: #091530;
+    border: 1.1px solid #808080; /* Border width and color */
+    border-radius: 30px;
+}
+
+
+.assigment-layout-row {
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+}
+
+.assigment-container-style-image {
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+    background-clip: padding-box;
+    background-origin: padding-box;
+}
+
+.assigment-container-layout-2 {
+    padding: 20px 70px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.assigment-container-layout-2 p {
+    width: 500px;
+}
+
+.assigment-img1 {
+    max-width: 150%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.assigment h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.assigment-container-layout-2 h3{
+    color: white;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.assigment-container-layout-2 p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 360px;
+}
+
+/* .des-setWidth {
+    width: 30px;
+} */
+
+.project-features {
+    color: white;
+    font-size: 14px;
+}
+
+.project-features i {
+    font-size: 15px;
+    color: #DAED1A;
+}
+
+.navigation{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.prev-btn .next-btn{
+    z-index: 999;
+    font-size: 2em;
+
+}
+
+/* projects */
+.gallery {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 800px;
+    width: 100%;
+}
+
+.gallery-grid {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Gap between columns and rows */
+}
+
+/* Style for individual image items */
+.gallery-item {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+/* Style for the images within the items */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style for the special item */
+.gallery-item1 {
+    background-color: #30A068;
+}
+
+.gallery-item2 {
+    background-color: #48464E;
+}
+
+.gallery-item3 {
+    background-color: #5B6DAB;
+}
+
+.gallery-item4 {
+    background-color: #D4EAD3;
+}
+
+.gallery-item5 {
+    background-color: #DAEEA9;
+}
+
+.gallery-item6 {
+    background-color: #C1D7E9;
+}
+
+.gallery-item1-img1{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+.gallery-item1-img2{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+
+.gallery-item1-img3{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+
+.gallery-item1-img4{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+.gallery-item1-img5{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+.gallery-item1-img6{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain; /* Keep the image aspect ratio and fit inside */
+}
+
+.gallery-align{
+    width: 70%;
+    align-items: center;
+}
+
+.gallery-align h1 {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    /* margin-top: 80px; */
+}
+
+.gallery-align p {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.gallery-align hgroup {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content horizontally */
+    color: white;
+}
+
+.gallery-align hgroup h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.gallery-align hgroup p {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.seemore-button {
+    margin-top: 15px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /
+}
+
+.seemore-button a {
+    color: white;
+    border-color: white;
+    border: 2px solid white;
+    padding: 10px 23px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .55s ease;
+    text-align: center;
+}
+
+.seemore-button a:hover {
+    background: transparent;
+    transform: translateX(2px);
 }
