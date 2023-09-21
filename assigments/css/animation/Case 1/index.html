@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <!--before you trying to use media queries you should apply meta viewport tag-->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+        div {
+            width: 150px;
+            height: 60px;
+            background-color: red;
+            animation-name: animi;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            position: relative;
+            border-radius: 10px;
+            animation-iteration-count: 1000000;
+            
+        }
+
+        @keyframes animi {
+            0% {
+                background-color: blue;
+                left: 0;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background-color: orange;
+                left: 1200px;
+                top: 0;
+                transform: rotate(180deg);
+            }
+
+            50% {
+                background-color: rgb(78, 32, 151);
+                left: 1200px;
+                top: 600px;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                background-color: rgb(64, 116, 64);
+                left: 0px;
+                top: 600px;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                background-color: rgb(202, 23, 163);
+                top: 0px;
+                left: 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>

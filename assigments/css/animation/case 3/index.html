@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <!--before you trying to use media queries you should apply meta viewport tag-->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            animation: slider 8s infinite;
+
+
+        }
+
+        @keyframes slider {
+            0% {
+                transform: translateX(0);
+            }
+            /* 20% {
+                transform: translateX(0);
+                opacity: 1;
+            } */
+            25% {
+                transform: translateX(-25%);
+            }
+            /* 45% {
+                transform: translateX(-100%);
+                opacity: 0;
+            } */
+            50% {
+                transform: translateX(-50%);
+            }
+            /* 70% {
+                transform: translateX(-200%);
+                opacity: 1;
+            } */
+            75% {
+                transform: translateX(-75%);
+            }
+            /* 95% {
+                transform: translateX(-300%);
+                opacity: 0;
+            } */
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <div>
+            <div><img src="Screenshot (10).png" alt=""></div>
+        </div>
+        <div>
+            <div><img src="Screenshot (11).png" alt=""></div>
+        </div>
+        <div>
+            <div><img src="Screenshot (12).png" alt=""></div>
+        </div>
+        <div>
+            <div><img src="Screenshot (13).png" alt=""></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
