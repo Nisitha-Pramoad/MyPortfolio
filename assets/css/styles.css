@@ -14,11 +14,13 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 45px 14%;
     background: transparent;
+    background-color: #050F25;
 }
 
 body {
@@ -401,7 +403,7 @@ body {
 
 
 /* assigment */
-.assigment{
+.assigment {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,23 +824,6 @@ body {
     transform: scale(1.1);
 }
 
-/* contact */
-.contact-sec {
-    background-image: url("contactBgImage.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
-
-
-/*  */
-/* .contact {
-    height: 700px;
-    width: 100%;
-    background-color: #576c9b;
-} */
-
 
 
 /* footer */
@@ -908,7 +893,7 @@ body {
     left: 12px;
 }
 
-.icon-left-bottom{
+.icon-left-bottom {
     position: absolute;
     width: 140px;
     height: auto;
@@ -916,7 +901,7 @@ body {
     left: 300px;
 }
 
-.icon-right-bottom{
+.icon-right-bottom {
     position: absolute;
     width: 100px;
     height: auto;
@@ -924,10 +909,13 @@ body {
     right: 430px;
 }
 
-.icon-right-top{
+.icon-right-top {
     position: absolute;
     width: 65px;
     height: auto;
     top: 100px;
     right: 230px;
 }
+
+
+
