@@ -1,6 +1,4 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -70,6 +68,14 @@ body {
     background-color: green;
 }
 
+.card_custom_header {
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+}
+
 .adding_item_select_spacing {
     margin-bottom: 22%;
 }
@@ -87,3 +93,5 @@ body {
     margin-bottom: 9%;
     padding-left: 5%;
 }
+
+/*  */
