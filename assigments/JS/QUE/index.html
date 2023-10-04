@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section>div {
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+
+        section>div:nth-child(2) {
+            width: 200px;
+            height: 50px;
+            top: 10px;
+            margin-left: 202px;
+        }
+
+        section>div:nth-child(3) {
+            width: 200px;
+            height: 50px;
+            margin-top: -54px;
+            margin-left: 400px;
+        }
+
+        section>div:nth-child(4) {
+            width: 200px;
+            height: 50px;
+            margin-top: -54px;
+            margin-left: 600px;
+        }
+
+        section>div:nth-child(5) {
+            width: 200px;
+            height: 50px;
+            margin-top: -54px;
+            margin-left: 800px;
+        }
+
+        section>div:nth-child(6) {
+            width: 200px;
+            height: 50px;
+            margin-top: 0px;
+            margin-left: 1002px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <script>
+
+        var colors = ["purple", "orange", "green", "red", "blue", "grey"];
+
+        let divs = document.querySelectorAll("section>div");
+
+        setInterval(processQue,100);
+
+        function processQue(){
+            for (let i = 0; i < colors.length; i++) {
+
+                colors.push();
+                divs[i].style.background = colors[i];
+
+            }
+
+
+            let lastValue = colors.pop();
+            colors.unshift(lastValue);
+        }
+
+        // var age = [10,20,30,40];
+
+        // for (let i of age) {
+        //     console.log(i, age[i]);
+        // }
+
+        // age.forEach(function(e){
+        //     console.log(e);
+        // });
+
+    </script>
+
+</body>
+
+</html>
