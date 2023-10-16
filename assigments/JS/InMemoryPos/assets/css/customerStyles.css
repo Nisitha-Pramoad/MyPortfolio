@@ -1,0 +1,67 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.custom-navbar-brand {
+    color: #5c9404;
+}
+
+.custom-btn-search {
+    background-color: #5c9404;
+    border-color: #5c9404;
+    color: #fff; /* Text color for the button */
+}
+
+.custom-btn-search:hover {
+    background-color: #387e01; /* Color on hover */
+    border-color: #387e01;
+    color: #fff; /* Text color on hover */
+}
+
+.spacing_bet {
+    padding: 2% 4%;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn_group_spacing {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.input_field_spacing {
+    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+}
+
+.title_name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.modal-header {
+    background-color: #5c9404;
+    color: white;
+}
+
+.btn-close {
+    background-color: white;
+}
+
+.modal-body {
+    font-weight: bold;
+}
+
+.form-row .form-group {
+    padding: 1,5rem;
+    margin-bottom: 10px;
+}
+
+.custom-table-color {
+    color: #5c9404;
+}
